@@ -1,0 +1,19 @@
+{
+  "name": "react-baklava-router",
+  "version": "0.0.0-alpha-1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "format": "prettier --config .prettierrc --write \"src/**/*.{ts,tsx}\""
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "5.8.2"
+  }
+}
