@@ -1,12 +1,10 @@
 import { lazy } from 'react';
-
-import { RoutesConfig } from './lib';
+import { RoutesConfig } from 'react-baklava-router';
 
 import queryClient from './queryClient';
 import { ErrorResponse } from './api';
 import { getPost, getPosts } from './api/post';
 import { getUser } from './api/user';
-
 import Index from './pages/index';
 import NotFound from './pages/404';
 

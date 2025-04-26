@@ -1,4 +1,4 @@
-import { ChildRoutes } from '../../lib';
+import { ChildRoutes } from 'react-baklava-router';
 
 export default function Me() {
   return (

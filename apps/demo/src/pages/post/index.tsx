@@ -1,6 +1,6 @@
 import { useSuspenseQuery } from '@tanstack/react-query';
+import { Link, useParams } from 'react-baklava-router';
 
-import { Link, useParams } from '../../lib';
 import { getPost } from '../../api/post';
 
 export default function Post() {

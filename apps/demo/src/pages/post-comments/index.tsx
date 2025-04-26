@@ -1,4 +1,4 @@
-import { Link, useParams } from '../../lib';
+import { Link, useParams } from 'react-baklava-router';
 
 export default function PostComments() {
   const { id } = useParams();

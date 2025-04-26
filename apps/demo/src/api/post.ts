@@ -10,17 +10,7 @@ export type Post = {
 export function getPosts() {
   return queryOptions({
     queryKey: ['posts'],
-    queryFn: async () => {
-      const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-      const json = await res.json();
-      if (res.status === 200) {
-        return json as Promise<Post[]>;
-      } else {
-        throw {
-          message: 'GENERIC ERROR MESSAGE',
-        };
-      }
-    },
+    queryFn: () => fetch('https://jsonplaceholder.typicode.com/posts').then((res) => res.json() as Promise<Post[]>),
   });
 }
 

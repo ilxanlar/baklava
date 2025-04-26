@@ -1,6 +1,6 @@
 import { QueryClientProvider } from '@tanstack/react-query';
+import { Link, Router } from 'react-baklava-router';
 
-import { Link, Router } from './lib';
 import queryClient from './queryClient';
 import routes from './routes';
 import './App.css';

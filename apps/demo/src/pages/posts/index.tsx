@@ -1,7 +1,7 @@
 import { useSuspenseQuery } from '@tanstack/react-query';
+import { Link } from 'react-baklava-router';
 
 import { getPosts } from '../../api/post';
-import { Link } from '../../lib';
 
 export default function Posts() {
   const qr = useSuspenseQuery(getPosts());
